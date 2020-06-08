@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingBottom="16dp"
+    android:id="@+id/activity_result"
+    tools:context=".Result">
+
+    <TextView
+        android:id="@+id/remak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score"
+        android:layout_marginTop="20dp"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24dp" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:fontFamily="casual"
+        android:text="YOU SCORED 20 OUT OF 20"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <Button
+
+        android:id="@+id/retry1"
+        android:layout_marginTop="40dp"
+        style="@style/Base.AlertDialog.AppCompat.Light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ede7e7"
+        android:text="Retry"
+        android:layout_below="@+id/remak"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="179dp"
+        android:layout_height="152dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        app:srcCompat="@drawable/icon2" />
+
+    <Button
+
+        android:id="@+id/sharebnt"
+        android:layout_alignRight="@+id/remak"
+        android:layout_below="@+id/remak"
+        style="@style/Base.AlertDialog.AppCompat.Light"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ede7e7"
+        android:text="share"
+        android:textColor="#000000" />
+
+
+</RelativeLayout>

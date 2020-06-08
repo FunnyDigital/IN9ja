@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#2F3030"
+    android:layout_height="match_parent"
+    tools:context=".HOME">
+
+<RelativeLayout
+    android:layout_centerInParent="true"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+    <Button
+
+        android:id="@+id/playbnt"
+        style="@android:style/Holo.ButtonBar"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/roundbnt2"
+        android:text="PLAY" />
+
+    <Button
+        android:id="@+id/options_btn"
+        style="@android:style/Holo.ButtonBar"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/playbnt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/roundbnt2"
+        android:text="OPTION" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/options_btn"
+        android:background="@drawable/roundbnt2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:checked="true"
+        android:text="MUSIC" />
+
+
+    <Switch
+
+        android:id="@+id/switch2"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/switch1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textAlignment="center"
+        android:background="@drawable/roundbnt2"
+        android:checked="false"
+
+        android:text="SFX" />
+
+    <Button
+        android:id="@+id/Exit_bnt"
+        style="@android:style/Holo.ButtonBar"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/switch2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="59dp"
+        android:background="@drawable/rounded_button"
+        android:text="QUIT" />
+
+
+</RelativeLayout>
+
+
+</RelativeLayout>
