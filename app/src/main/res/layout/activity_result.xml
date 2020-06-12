@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:paddingTop="16dp"
     android:paddingRight="16dp"
+    android:background="#2F3030"
     android:paddingLeft="16dp"
     android:paddingBottom="16dp"
     android:id="@+id/activity_result"
@@ -13,35 +14,37 @@
 
     <TextView
         android:id="@+id/remak"
+        android:visibility="visible"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/score"
         android:layout_marginTop="20dp"
         android:fontFamily="casual"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="#EAEAEA"
         android:textSize="24dp" />
 
     <TextView
         android:id="@+id/score"
+        android:layout_marginTop="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView"
         android:fontFamily="casual"
         android:text="YOU SCORED 20 OUT OF 20"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="#FFFFFF"
         android:textSize="20dp" />
 
     <Button
 
         android:id="@+id/retry1"
         android:layout_marginTop="40dp"
-        style="@style/Base.AlertDialog.AppCompat.Light"
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#ede7e7"
+        android:layout_width="299dp"
+      android:background="@drawable/rounded_button"
         android:text="Retry"
+        android:layout_centerHorizontal="true"
         android:layout_below="@+id/remak"
         android:textColor="#000000" />
 
@@ -57,15 +60,43 @@
     <Button
 
         android:id="@+id/sharebnt"
-        android:layout_alignRight="@+id/remak"
-        android:layout_below="@+id/remak"
-        style="@style/Base.AlertDialog.AppCompat.Light"
-        android:layout_marginTop="40dp"
-        android:layout_width="wrap_content"
+        android:layout_below="@+id/retry1"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
         android:layout_height="wrap_content"
-        android:background="#ede7e7"
+        android:layout_width="299dp"
+        android:background="@drawable/rounded_button"
         android:text="share"
         android:textColor="#000000" />
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_below="@id/sharebnt"
+    android:gravity="bottom"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff"
+
+        android:layout_centerHorizontal="true"
+        android:text="SPONSORED BY HNGi7 TEAM GOLD "
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="ArtemisCode"
+        android:textColor="#ffff"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView"
+        android:layout_height="wrap_content"></TextView>
+</RelativeLayout>
+
 
 
 </RelativeLayout>

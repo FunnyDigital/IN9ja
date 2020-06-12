@@ -5,5 +5,10 @@
     <string name="questions">questions</string>
     <string name="score">SCORE</string>
     <string name="in9ja">in9ja</string>
+    <string name="play">PLAY</string>
+    <string name="option">OPTION</string>
+    <string name="music">MUSIC</string>
+    <string name="sfx">SFX</string>
+    <string name="quit">QUIT</string>
 
 </resources>

@@ -76,7 +76,7 @@ public class MainHome extends AppCompatActivity {
             public void onClick(View v) {
                 //mu logic here
                 if (mChoise1.getText()==mAnswer){
-                    mScore= mScore+100;
+                    mScore= mScore+10;
                     UpdateScore(mScore);
 
                     //optionall toste
@@ -105,7 +105,7 @@ public class MainHome extends AppCompatActivity {
                     soundcorrect.start();
 
                 }else {
-                    mScore= mScore-100;
+                    mScore= mScore-10;
                     UpdateScore(mScore);
 
                     Toast.makeText(MainHome.this,"OGA PACK",Toast.LENGTH_LONG).show();
@@ -150,7 +150,7 @@ public class MainHome extends AppCompatActivity {
             public void onClick(View v) {
                 //mu logic here
                 if (mChoise2.getText()==mAnswer){
-                    mScore= mScore+100;
+                    mScore= mScore+10;
                     UpdateScore(mScore);
                     //optionall toste
                     Toast.makeText(MainHome.this,"CORRECT",Toast.LENGTH_LONG).show();
@@ -176,7 +176,7 @@ public class MainHome extends AppCompatActivity {
                     //end check
 
                 }else {
-                    mScore= mScore-100;
+                    mScore= mScore-10;
                     UpdateScore(mScore);
 
                     Toast.makeText(MainHome.this,"OGA PACK",Toast.LENGTH_LONG).show();
@@ -216,7 +216,7 @@ public class MainHome extends AppCompatActivity {
             public void onClick(View v) {
                 //mu logic here
                 if (mChoise3.getText()==mAnswer){
-                    mScore= mScore+100;
+                    mScore= mScore+10;
                     UpdateScore(mScore);
                     //optionall toste
                     Toast.makeText(MainHome.this,"CORRECT",Toast.LENGTH_LONG).show();
@@ -245,7 +245,7 @@ public class MainHome extends AppCompatActivity {
 
 
                 }else {
-                    mScore= mScore-100;
+                    mScore= mScore-10;
                     UpdateScore(mScore);
 
                     Toast.makeText(MainHome.this,"OGA PACK",Toast.LENGTH_LONG).show();
@@ -283,7 +283,7 @@ public class MainHome extends AppCompatActivity {
             public void onClick(View v) {
                 //mu logic here
                 if (mChoise4.getText()==mAnswer){
-                    mScore= mScore+100;
+                    mScore= mScore+10;
                     UpdateScore(mScore);
 
                     //optionall toste
@@ -313,7 +313,7 @@ public class MainHome extends AppCompatActivity {
 
 
                 }else {
-                    mScore= mScore-100;
+                    mScore= mScore-10;
                     UpdateScore(mScore);
 
                     Toast.makeText(MainHome.this,"OGA PACK ",Toast.LENGTH_LONG).show();

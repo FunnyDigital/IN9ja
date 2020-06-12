@@ -25,7 +25,7 @@
         android:layout_centerHorizontal="true"
 
         android:background="@drawable/roundbnt2"
-        android:text="PLAY" />
+        android:text="@string/play" />
 
     <Button
         android:id="@+id/options_btn"
@@ -36,7 +36,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:background="@drawable/roundbnt2"
-        android:text="OPTION" />
+        android:text="@string/option" />
 
     <Switch
         android:id="@+id/switch1"
@@ -47,8 +47,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:textAlignment="center"
-        android:checked="true"
-        android:text="MUSIC" />
+        android:checked="false"
+        android:text="@string/music" />
 
 
     <Switch
@@ -63,7 +63,7 @@
         android:background="@drawable/roundbnt2"
         android:checked="false"
 
-        android:text="SFX" />
+        android:text="@string/sfx" />
 
     <Button
         android:id="@+id/Exit_bnt"
@@ -75,7 +75,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginBottom="59dp"
         android:background="@drawable/rounded_button"
-        android:text="QUIT" />
+        android:text="@string/quit" />
 
 
 </RelativeLayout>

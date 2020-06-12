@@ -24,10 +24,11 @@
 
     <Button
         android:id="@+id/choice1"
+        android:layout_height="wrap_content"
         android:layout_width="299dp"
         android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
-        android:layout_height="wrap_content"
+
         android:background="@drawable/rounded_button"
         android:layout_below="@+id/questiondis"
         android:text="Button"
