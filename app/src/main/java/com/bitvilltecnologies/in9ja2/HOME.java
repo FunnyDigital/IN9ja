@@ -2,8 +2,10 @@ package com.bitvilltecnologies.in9ja2;
 
 import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -11,6 +13,7 @@ import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.Toast;
+import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -28,17 +31,18 @@ public class HOME extends AppCompatActivity {
 
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //requestWindowFeature(Window.FEATURE_NO_TITLE);
+        //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_home);
 
         final MediaPlayer intro = MediaPlayer.create(this,R.raw.gamesong);
 
-
-
+        Uri uri = Uri.parse("android.resource://" + getPackageName() + "/" + R.raw.anivid);
 
 
 
@@ -49,6 +53,17 @@ public class HOME extends AppCompatActivity {
 
 
 
+       /* final VideoView videoView = (VideoView)findViewById(R.id.videoview);
+        videoView.setVideoURI(uri);
+        videoView.start();
+
+        videoView.setOnCompletionListener ( new MediaPlayer.OnCompletionListener() {
+
+            @Override
+            public void onCompletion(MediaPlayer mediaPlayer) {
+                videoView.start();
+            }
+        });*/
 
 
         mPlay_bnt.setOnClickListener(new View.OnClickListener() {
@@ -73,7 +88,15 @@ public class HOME extends AppCompatActivity {
 
 
                if(isChecked){
-                   intro.start();
+
+                   intro.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                       @Override
+                       public void onCompletion(MediaPlayer mp) {
+                           intro.start();
+                       }
+                   });
+
+
                   Toast.makeText(HOME.this,"swicth ON",Toast.LENGTH_LONG);
                }else{
                    intro.pause();

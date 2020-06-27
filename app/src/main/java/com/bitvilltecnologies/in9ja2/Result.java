@@ -28,7 +28,6 @@ public class Result extends AppCompatActivity {
         setContentView(R.layout.activity_result);
 
 
-
         mscore=(TextView)findViewById(R.id.score);
         TextView mGrade = (TextView) findViewById(R.id.remak);
         mRetry=(Button)findViewById(R.id.retry1);
@@ -64,10 +63,14 @@ public class Result extends AppCompatActivity {
             mGrade.setText("You are a MuMu Man, just look at you,you are not In9ja ");
         }
 
+if(score <10){
+    mscore.setText("You owe Us "+score+"₦"+ "out of "+QuestionLibrary.mQuestions.length*10);
+}else{
+    mscore.setText("You Made "+score+"₦"+ " out of "+"200₦" );
+    // mscore.setText("your score "+score+ " out of "+QuestionLibrary.mQuestions.length );
+}
 
 
-        mscore.setText("your score "+score+"₦"+ " out of "+"200₦" );
-       // mscore.setText("your score "+score+ " out of "+QuestionLibrary.mQuestions.length );
 
 
 

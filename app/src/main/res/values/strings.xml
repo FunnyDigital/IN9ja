@@ -10,5 +10,7 @@
     <string name="music">MUSIC</string>
     <string name="sfx">SFX</string>
     <string name="quit">QUIT</string>
+    <string name="get_started">Get Started</string>
+    <string name="in9ja2">In9Ja2</string>
 
 </resources>

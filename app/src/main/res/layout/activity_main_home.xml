@@ -5,7 +5,7 @@
     android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2F3030"
+    android:background="#7c84bb"
     android:backgroundTintMode="screen"
     android:orientation="vertical"
     tools:context=".MainHome">
